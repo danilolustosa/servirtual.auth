@@ -33,7 +33,9 @@ namespace Auth.API.Service
 
         public User Get(int id)
         {
-            return _repository.Get(id);
+            var result = _repository.Get(id);
+            result.StatusCode = 200;
+            return result;
         }
 
         public List<User> List()

@@ -17,7 +17,7 @@ namespace Auth.API.Controllers
     {
         UserService _service = new UserService();
 
-        [HttpPost]
+        [HttpPost("login")]
         [AllowAnonymous]
         public IActionResult Login(string email, string password)
         {

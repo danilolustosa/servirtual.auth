@@ -63,6 +63,7 @@ namespace Auth.API
 
             app.UseRouting();
 
+            //Auth
             app.UseCors(x => x
                .AllowAnyOrigin()
                .AllowAnyMethod()
@@ -71,6 +72,7 @@ namespace Auth.API
             app.UseAuthentication();
 
             app.UseAuthorization();
+            //Auth
 
             app.SetSwaggerConfig();
 
